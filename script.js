@@ -1,17 +1,20 @@
-// Preview image upload
-document.getElementById("uploadImage").addEventListener("change", function() {
-    const file = this.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        document.getElementById("profileImage").setAttribute("src", e.target.result);
-      };
-      reader.readAsDataURL(file);
+// Menu active effect
+const menuItems = document.querySelectorAll('.sidebar nav ul li');
+const mainContent = document.querySelector('.main-content');
+const aboutContent = document.querySelector('.about-content');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuItems.forEach(el => el.classList.remove('active'));
+    item.classList.add('active');
+
+    // Tampilkan About jika klik ABOUT, sisanya Main Content
+    if (item.textContent === 'ABOUT') {
+      mainContent.style.display = 'none';
+      aboutContent.style.display = 'block';
+    } else {
+      mainContent.style.display = 'flex';
+      aboutContent.style.display = 'none';
     }
   });
-  
-  // Save profile button
-  function saveProfile() {
-    alert("Profile saved!");
-  }
-  
+});

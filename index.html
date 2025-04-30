@@ -2,28 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Profile Page</title>
+  <title>Profile Website</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="profile-container">
-  <h1>Profile</h1>
-  <div class="profile-card">
-    <div class="profile-pic">
-      <img src="bagus.jpeg" id="profileImage">
-      <input type="file" id="uploadImage" accept="image/*">
-      <label for="uploadImage" class="camera-icon">📷</label>
-    </div>
-    <form>
-      <input type="text" placeholder="Username">
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <button type="button" onclick="saveProfile()">SAVE</button>
-    </form>
+<div class="sidebar">
+  <div class="profile-img">
+    <img src="bagus.jpeg" alt="Profile Picture">
   </div>
+  <h2>Bagus Budi Darmawan</h2>
+  <p>UI/UX Designer</p>
+  <nav>
+    <ul>
+      <li class="active">HOME</li>
+      <li>ABOUT</li>
+      <li>SKILLS</li>
+      <li>EDUCATION</li>
+      <li>CONTACT</li>
+    </ul>
+  </nav>
 </div>
 
+<div class="main-content">
+  <div class="text-content">
+    <h1>I am <span>a UI/UX Designer</span></h1>
+    <p><a href="#">colorlib.com</a></p>
+    <button>VIEW PORTFOLIO</button>
+  </div>
+  <div class="image-content">
+    <img src="bagusbd.png" alt="Main Photo">
+  </div>
+</div>
+<div class="about-content" style="display: none;">
+    <div class="about-card">
+      <div class="about-left">
+        <h2>Bagus Budi Darmawan</h2>
+        <p>Hi, I'm <strong>Bagus Budi Darmawan</strong>, a passionate <strong>UI/UX Designer</strong> with a strong interest in creating intuitive, user-friendly digital experiences. I believe great design is not just about how things look, but how they work and feel.</p>
+        <p>I have experience designing web and mobile interfaces, with a focus on clean, modern visuals and seamless user journeys. My design philosophy is centered around empathy — understanding users' needs and crafting solutions that improve their digital interactions.</p></p>
+        <ul>
+          <li><i class="fas fa-envelope"></i> bagusbudi1302@gmail.com</li>
+          <li><i class="fas fa-globe"></i> bagusdarmawan.com</li>
+          <li><i class="fas fa-skype"></i> bagusbd@skype.com</li>
+          <li><i class="fas fa-phone"></i> +62 899 8675 881</li>
+          <li><i class="fas fa-map-marker-alt"></i> Cengkareng, Jakarta Barat, Indonesia</li>
+        </ul>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fas fa-rss"></i>
+        </div>
+      </div>
+      <div class="about-right">
+        <img src="bagus.jpeg" alt="Profile Picture">
+      </div>
+    </div>
+  </div>
+  
 <script src="script.js"></script>
 </body>
 </html>
