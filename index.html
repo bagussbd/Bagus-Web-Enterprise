@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="profile-container">
+  <h1>Profile</h1>
+  <div class="profile-card">
+    <div class="profile-pic">
+      <img src="bagus.jpeg" id="profileImage">
+      <input type="file" id="uploadImage" accept="image/*">
+      <label for="uploadImage" class="camera-icon">📷</label>
+    </div>
+    <form>
+      <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button type="button" onclick="saveProfile()">SAVE</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
